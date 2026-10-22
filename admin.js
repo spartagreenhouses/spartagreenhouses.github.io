@@ -928,8 +928,10 @@
 
     // Общие правки с сервера. Если сервера нет — пробуем статический файл,
     // чтобы сайт не остался без сохранённого содержимого.
+    // На статическом хостинге (GitHub Pages) /api/content отвечает 404, а не
+    // сетевой ошибкой — поэтому любой неуспешный ответ тоже ведёт к файлу.
     api('content', { cache: 'no-store' })
-      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error('HTTP ' + r.status)); })
       .catch(function () {
         return fetch('./content.json', { cache: 'no-store' })
           .then(function (r) { return r.ok ? r.json() : null; })
