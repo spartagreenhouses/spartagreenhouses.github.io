@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPARTA — технологии, которые решают реальные задачи</title>
+<meta name="description" content="SPARTA — технологическая и инженерная команда, разрабатывающая инновационные решения для реальных задач. Проект Smart GreenHouse объединяет сельское хозяйство, IoT, автоматизацию и системы управления.">
+<meta name="keywords" content="Smart GreenHouse, умная теплица, IoT, автоматизация, системы управления, AgriTech, TrimBoT, робототехника, SPARTA">
+<meta property="og:title" content="SPARTA — Engineering for Real-World Problems">
+<meta property="og:description" content="Инновационные технологии для реальных задач. Smart GreenHouse: сельское хозяйство, IoT, автоматизация и системы управления.">
+<meta property="og:type" content="website">
+<link rel="icon" href="./assets/sparta-mark.jpg">
+<link rel="stylesheet" href="./styles.css?v=58">
+<script>document.documentElement.classList.add('js')</script>
+<script src="./translations.js?v=58"></script>
+</head>
+<body>
+
+<!-- INTRO -->
+<div class="intro" id="intro" role="presentation">
+  <div class="intro__panels" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="intro__word">
+    <div class="intro__letters" aria-label="Sparta">
+      <span class="ltr"><i>S</i></span>
+      <span class="ltr"><i>p</i></span>
+      <span class="ltr"><i>a</i></span>
+      <span class="ltr"><i>r</i></span>
+      <span class="ltr"><i>t</i></span>
+      <span class="ltr"><i>a</i></span>
+    </div>
+    <span class="intro__rule" aria-hidden="true"></span>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#hero">
+    <img class="nav__mark" src="./assets/sparta-mark.jpg" alt="SPARTA" width="256" height="256">
+    <span class="nav__name">SPARTA</span>
+  </a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#about" data-i18n="nav-about">О команде</a>
+    <a href="#products" data-i18n="nav-products">Продукты</a>
+    <a href="#team" data-i18n="nav-team">Команда</a>
+    <a href="#contact" class="nav__only-mobile" data-i18n="nav-contact">Связаться</a>
+  </nav>
+  <div class="nav__actions">
+    <div class="nav__lang-toggle">
+      <button class="nav__lang-btn" id="langToggle" aria-label="Выбор языка" aria-expanded="false" aria-haspopup="menu">
+        <span class="nav__lang-text">РУ</span>
+        <svg class="nav__lang-icon" viewBox="0 0 20 20" width="14" height="14" aria-hidden="true">
+          <path fill="currentColor" d="M4.93 5L10 11.07 15.07 5H4.93z"/>
+        </svg>
+      </button>
+      <div class="nav__langs" id="langMenu" role="menu">
+        <button class="lang-opt" data-lang="ru" role="menuitem">Русский</button>
+        <button class="lang-opt" data-lang="en" role="menuitem">English</button>
+        <button class="lang-opt" data-lang="hy" role="menuitem">Հայերեն</button>
+      </div>
+    </div>
+    <a class="btn btn--green btn--sm" href="#contact" data-i18n="nav-contact">Связаться</a>
+    <button class="btn btn--light btn--sm nav__login" id="adminLogin" data-i18n="nav-login">Вход</button>
+    <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <span class="hero__glow" aria-hidden="true"></span>
+
+    <!-- фоновая графика: контроллер слева, TrimBoT справа, перспектива поля внизу -->
+    <div class="hero__bg" aria-hidden="true">
+      <span class="hero__obj hero__bg-iot"></span>
+      <span class="hero__obj hero__bg-bot"></span>
+      <span class="hero__field"></span>
+    </div>
+
+    <div class="hero__grid">
+
+      <div class="hero__left">
+        <span class="pill" data-reveal><i class="pill__dot"></i> <span data-i18n="hero-pill">AgriTech · IoT · Ереван, Армения</span></span>
+
+        <h1 class="hero__title" data-reveal>
+         <span class="accent">SPARTA</span><br>
+        </h1>
+
+        <p class="hero__lead" data-reveal data-i18n="hero-lead">
+      SPARTA — технологическая и инженерная команда,
+      которая разрабатывает инновационные технологии для решения реальных проблем,
+      особенно в сфере автоматизации и роботизации сельского хозяйства.
+        </p>
+
+        <div class="hero__cta" data-reveal>
+          <a class="btn btn--green" href="#contact" data-i18n="hero-cta-1">Обсудить проект</a>
+        </div>
+      </div>
+
+      <div class="hero__cards" data-reveal>
+        <article class="hcard hcard--a">
+          <span class="hcard__label" data-i18n="hero-card-1-label">Направление</span>
+          <b class="hcard__value">AgriTech</b>
+        </article>
+
+        <article class="hcard hcard--b">
+          <span class="hcard__label" data-i18n="hero-card-2-label">Системы управления</span>
+          <b class="hcard__value" data-i18n="hero-card-2-value">Автоматизация</b>
+        </article>
+
+        <article class="hcard hcard--c">
+          <span class="hcard__label" data-i18n="hero-card-3-label">Платформа</span>
+          <b class="hcard__value accent" data-i18n="hero-card-3-value">Робототехника</b>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow" data-i18n="about-eyebrow">01 — О команде</span>
+      <h2 data-i18n="about-title">Технологии, которые решают реальные задачи</h2>
+    </div>
+
+    <p class="lead" data-reveal data-i18n="about-lead">
+      SPARTA — технологическая и инженерная команда. Мы начинаем не с технологии,
+      а с проблемы: смотрим, с чем реально сталкивается человек в своей работе, и уже
+      под эту задачу подбираем инструменты — электронику, автоматику, IoT и системы
+      управления. Решение считается удачным не тогда, когда оно сложное,
+      а когда им действительно пользуются.
+    </p>
+
+    <blockquote class="creed" data-reveal>
+      <span class="creed__mark">“</span>
+      <p data-i18n="creed-text">Люди не должны подстраиваться под технологию —
+      <b>технология должна подстраиваться под людей.</b></p>
+      <footer class="creed__by" data-i18n="creed-by">Главный принцип, на котором строятся все продукты SPARTA</footer>
+    </blockquote>
+
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section section--alt" id="products">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow" data-i18n="products-eyebrow">02 — Продукты</span>
+      <h2 data-i18n="products-title">Что мы разрабатываем</h2>
+    </div>
+
+    
+    <!-- Smart GreenHouse -->
+    <article class="product" data-reveal>
+      <div class="product__visual product__visual--photo">
+        <img src="./assets/greenhouse-controller-v2.webp?v=58" alt="Smart GreenHouse Controller" width="864" height="1822" loading="lazy" decoding="async">
+      </div>
+      <div class="product__body">
+        <div class="product__top">
+          <h3 data-i18n="product-1-title">Smart GreenHouse</h3>
+          <span class="badge badge--live" data-i18n="product-1-badge">Флагманский проект</span>
+        </div>
+        
+        <p data-i18n="product-1-desc">
+          Smart GreenHouse — это AgriTech-решение команды SPARTA, которое делает управление
+          теплицей более умным и автоматизированным. Система контролирует условия внутри теплицы,
+          помогает фермеру своевременно реагировать на изменения и сокращает необходимость ручного управления.
+
+        </p>
+
+        <div class="flow" aria-label="Логика работы системы">
+          <div class="flow__step"><b data-i18n="flow-sensors">Данные</b><i data-i18n="flow-sensors-sub">Контроль теплицы с помощью датчиков.</i></div>
+          <div class="flow__arrow" aria-hidden="true">→</div>
+          <div class="flow__step"><b data-i18n="flow-data">Умное решение</b><i data-i18n="flow-data-sub">Оценка условий и выбор действий.</i></div>
+          <div class="flow__arrow" aria-hidden="true">→</div>
+          <div class="flow__step"><b data-i18n="flow-control">Автоматизация</b><i data-i18n="flow-control-sub">Управление системами теплицы.</i></div>
+          <div class="flow__arrow" aria-hidden="true">→</div>
+          <div class="flow__step"><b data-i18n="flow-action">Контроль</b><i data-i18n="flow-action-sub">Фермер контролирует систему при необходимости.</i></div>
+        </div>
+
+        <p class="product__note" data-i18n="product-1-note">
+         Мы не заменяем существующую теплицу — <b>мы делаем её умной.</b>
+        </p>
+
+        <ul class="feats">
+          <li data-i18n="product-1-feat-1"><b>Контролирует теплицу</b> — температуру, влажность и состояние почвы.</li>
+          <li data-i18n="product-1-feat-2"><b>Собирает данные</b> — с помощью датчиков.</li>
+          <li data-i18n="product-1-feat-3"><b>Анализирует условия</b> — определяет необходимые действия.</li>
+          <li data-i18n="product-1-feat-4"><b>Управляет вентиляцией</b> — при изменении температуры.</li>
+          <li data-i18n="product-1-feat-5"><b>Управляет освещением</b> — по заданным условиям.</li>
+          <li data-i18n="product-1-feat-6"><b>Контроль фермера</b> — возможность контролировать работу системы.</li>
+          <li data-i18n="product-1-feat-7"><b>Адаптируется к теплице и фермеру</b> — без замены всей инфраструктуры.</li>
+        </ul>
+        <div class="tags">
+          <span>ESP32</span><span>MQTT</span><span>Node.js</span><span>TimescaleDB</span><span>OTA</span><span>KiCad</span>
+        </div>
+        <div class="audience">
+          <span class="audience__label" data-i18n="product-1-audience-label">Для кого</span>
+          <p data-i18n="product-1-audience">Маленькие и средние теплицы, фермеры и агропредприятия.</p>
+        </div>
+      </div>
+    </article>
+    <!-- TrimBoT -->
+    <article class="product product--rev" data-reveal>
+      <div class="product__visual product__visual--photo">
+        <img src="./assets/trimbot-platform.webp?v=58" alt="TrimBoT — роботизированная платформа с навесным оборудованием" width="880" height="1564" loading="lazy" decoding="async">
+      </div>
+      <div class="product__body">
+        <div class="product__top">
+          <h3 data-i18n="product-2-title">TrimBoT</h3>
+          <span class="badge badge--dev" data-i18n="product-2-badge">Направление в разработке</span>
+        </div>
+        <p class="product__sub" data-i18n="product-2-sub">Одна платформа. Разные задачи. Больше возможностей.</p>
+        <p data-i18n="product-2-desc">
+          TrimBoT — гибридная роботизированная сельскохозяйственная платформа,
+          разработанная для крутых, сложных и опасных участков. Машина работает там,
+          где обычная техника небезопасна, а ручной труд слишком тяжёл.
+        </p>
+
+        <div class="flow" aria-label="Логика работы платформы">
+          <div class="flow__step"><b data-i18n="flow-task">Выберите задачу</b><i data-i18n="flow-task-sub">кошение, обработка, сбор или перевозка.</i></div>
+          <div class="flow__arrow" aria-hidden="true">→</div>
+          <div class="flow__step"><b data-i18n="flow-area">Подключите инструмент</b><i data-i18n="flow-area-sub">установите нужную насадку.</i></div>
+          <div class="flow__arrow" aria-hidden="true">→</div>
+          <div class="flow__step"><b data-i18n="flow-mode">Выберите режим</b><i data-i18n="flow-mode-sub">Remote Control или Autonomous Mode.</i></div>
+          <div class="flow__arrow" aria-hidden="true">→</div>
+          <div class="flow__step"><b data-i18n="flow-monitor">Начните работу</b><i data-i18n="flow-monitor-sub">TrimBoT выполняет задачу.</i></div>
+        </div>
+
+        <ul class="feats">
+          <li data-i18n="product-2-feat-1"><b>Ручной режим</b> — оператор управляет машиной из безопасного места через VR-очки и пульт.</li>
+          <li data-i18n="product-2-feat-2"><b>Автономный режим</b> — выполняет запланированную задачу без прямого участия человека.</li>
+          <li data-i18n="product-2-feat-3"><b>Сложный рельеф</b> — работает на крутых, труднодоступных и опасных участках.</li>
+          <li data-i18n="product-2-feat-4"><b>Модульность</b> — одна машина под разные задачи за счёт сменного оборудования.</li>
+          <li data-i18n="product-2-feat-5"><b>Кошение сена</b> — обработка склонов, недоступных обычной технике.</li>
+          <li data-i18n="product-2-feat-6"><b>Вспашка и обработка почвы</b> — подготовка участка под посев.</li>
+          <li data-i18n="product-2-feat-7"><b>Уборка урожая</b> — механизация сбора на сложном рельефе.</li>
+        </ul>
+        <div class="tags">
+          <span>VR</span><span>RC</span><span>ROS 2</span><span>STM32</span><span>LiDAR</span><span>CAN bus</span>
+        </div>
+        <div class="audience">
+          <span class="audience__label" data-i18n="product-2-audience-label">Для кого</span>
+          <p data-i18n="product-2-audience">Хозяйства на склонах и сложном рельефе, где обычная техника небезопасна.</p>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+
+
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow" data-i18n="team-eyebrow">03 — Команда</span>
+      <h2 data-i18n="team-title">Члены команды</h2>
+    </div>
+
+    <div class="team-grid">
+
+      <!-- Grisha Ghurshudyan -->
+      <article class="member-card" data-member="m1" data-reveal>
+        <div class="member-card__avatar member-card__avatar--photo">
+          <img src="./assets/member-grisha.webp?v=62" alt="Grisha Ghurshudyan" width="320" height="320" loading="lazy" decoding="async">
+        </div>
+        <div class="member-card__content">
+          <h3 class="member-card__name">Grisha Ghurshudyan</h3>
+          <p class="member-card__role" data-i18n="member-1-role">Founder</p>
+          <p class="member-card__bio" data-i18n="member-1-bio">-----.</p>
+        </div>
+      </article>
+
+      <!-- Arthur Hovakimyan -->
+      <article class="member-card" data-member="m2" data-reveal>
+        <div class="member-card__avatar member-card__avatar--photo">
+          <img src="./assets/member-artur.webp?v=60" alt="Arthur Hovakimyan" width="320" height="320" loading="lazy" decoding="async">
+        </div>
+        <div class="member-card__content">
+          <h3 class="member-card__name">Arthur Hovakimyan</h3>
+          <p class="member-card__role" data-i18n="member-2-role">Co-founder</p>
+          <p class="member-card__bio" data-i18n="member-2-bio">-----.</p>
+        </div>
+      </article>
+
+      <!-- Garik Harutyunyan -->
+      <article class="member-card" data-member="m3" data-reveal>
+        <div class="member-card__avatar member-card__avatar--photo">
+          <img src="./assets/member-garik.webp?v=60" alt="Garik Harutyunyan" width="320" height="320" loading="lazy" decoding="async">
+        </div>
+        <div class="member-card__content">
+          <h3 class="member-card__name">Garik Harutyunyan</h3>
+          <p class="member-card__role" data-i18n="member-3-role">Technical specialist</p>
+          <p class="member-card__bio" data-i18n="member-3-bio">-----.</p>
+        </div>
+      </article>
+
+      <!-- Ashot Meloyan -->
+      <article class="member-card" data-member="m4" data-reveal>
+        <div class="member-card__avatar member-card__avatar--photo">
+          <img src="./assets/member-ashot.webp?v=60" alt="Ashot Meloyan" width="320" height="320" loading="lazy" decoding="async">
+        </div>
+        <div class="member-card__content">
+          <h3 class="member-card__name">Ashot Meloyan</h3>
+          <p class="member-card__role" data-i18n="member-4-role">Engineer</p>
+          <p class="member-card__bio" data-i18n="member-4-bio">-----.</p>
+        </div>
+      </article>
+
+      <!-- Ruzanna Vardapetyan -->
+      <article class="member-card" data-member="m5" data-reveal>
+        <div class="member-card__avatar member-card__avatar--photo">
+          <img src="./assets/member-ruzanna.webp?v=60" alt="Ruzanna Vardapetyan" width="320" height="320" loading="lazy" decoding="async">
+        </div>
+        <div class="member-card__content">
+          <h3 class="member-card__name">Ruzanna Vardapetyan</h3>
+          <p class="member-card__role" data-i18n="member-5-role">Engineer, PCB designer</p>
+          <p class="member-card__bio" data-i18n="member-5-bio">-----.</p>
+        </div>
+      </article>
+
+      <!-- Arevik Marukyan -->
+      <article class="member-card" data-member="m7" data-reveal>
+        <div class="member-card__avatar member-card__avatar--photo">
+          <img src="./assets/member-arevik.webp?v=60" alt="Arevik Marukyan" width="320" height="320" loading="lazy" decoding="async">
+        </div>
+        <div class="member-card__content">
+          <h3 class="member-card__name">Arevik Marukyan</h3>
+          <p class="member-card__role" data-i18n="member-7-role">Product Designer</p>
+          <p class="member-card__bio" data-i18n="member-7-bio">-----.</p>
+        </div>
+      </article>
+
+      <!-- Dianna Khachatryan -->
+      <article class="member-card" data-member="m8" data-reveal>
+        <div class="member-card__avatar member-card__avatar--photo">
+          <img src="./assets/member-dianna.webp?v=60" alt="Dianna Khachatryan" width="320" height="320" loading="lazy" decoding="async">
+        </div>
+        <div class="member-card__content">
+          <h3 class="member-card__name">Dianna Khachatryan</h3>
+          <p class="member-card__role" data-i18n="member-8-role">PR manager</p>
+          <p class="member-card__bio" data-i18n="member-8-bio">-----.</p>
+        </div>
+      </article>
+
+      <!-- Lianna Khachatryan -->
+      <article class="member-card" data-member="m9" data-reveal>
+        <div class="member-card__avatar member-card__avatar--photo">
+          <img src="./assets/member-lianna.webp?v=60" alt="Lianna Khachatryan" width="320" height="320" loading="lazy" decoding="async">
+        </div>
+        <div class="member-card__content">
+          <h3 class="member-card__name">Lianna Khachatryan</h3>
+          <p class="member-card__role" data-i18n="member-9-role">SMM specialist</p>
+          <p class="member-card__bio" data-i18n="member-9-bio">-----.</p>
+        </div>
+      </article>
+
+      <!-- Erna Qasinyan -->
+      <article class="member-card" data-member="m10" data-reveal>
+        <div class="member-card__avatar member-card__avatar--photo">
+          <img src="./assets/member-erna.webp?v=60" alt="Erna Qasinyan" width="320" height="320" loading="lazy" decoding="async">
+        </div>
+        <div class="member-card__content">
+          <h3 class="member-card__name">Erna Qasinyan</h3>
+          <p class="member-card__role" data-i18n="member-10-role">Graphic Designer</p>
+          <p class="member-card__bio" data-i18n="member-10-bio">-----.</p>
+        </div>
+      </article>
+
+      <!-- Azniv Khudatyan -->
+      <article class="member-card" data-member="m11" data-reveal>
+        <div class="member-card__avatar member-card__avatar--photo">
+          <img src="./assets/member-azniv.webp?v=60" alt="Azniv Khudatyan" width="320" height="320" loading="lazy" decoding="async">
+        </div>
+        <div class="member-card__content">
+          <h3 class="member-card__name">Azniv Khudatyan</h3>
+          <p class="member-card__role" data-i18n="member-11-role">Programmer</p>
+          <p class="member-card__bio" data-i18n="member-11-bio">-----.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow" data-i18n="contact-eyebrow">04 — Контакты</span>
+      <h2 data-i18n="contact-title">Обсудим сотрудничество</h2>
+    </div>
+    <div class="contact">
+      <form class="form" id="form" novalidate>
+        <div class="form__row">
+          <label><span data-i18n="form-name">Имя</span> <input type="text" name="name" required data-i18n-placeholder="form-name-placeholder" placeholder="Имя Фамилия"></label>
+          <label><span data-i18n="form-email">E-mail</span> <input type="email" name="email" required data-i18n-placeholder="form-email-placeholder" placeholder="you@example.com"></label>
+        </div>
+        <label><span data-i18n="form-topic">Тема</span>
+          <select name="topic">
+            <option data-i18n="form-topic-1">Пилотное внедрение</option>
+            <option data-i18n="form-topic-2">Партнёрство / инвестиции</option>
+            <option data-i18n="form-topic-3">Хочу в команду</option>
+            <option data-i18n="form-topic-4">Другое</option>
+          </select>
+        </label>
+        <label><span data-i18n="form-message">Сообщение</span> <textarea name="msg" rows="4" required data-i18n-placeholder="form-message-placeholder" placeholder="Коротко о задаче или предложении"></textarea></label>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+        <button class="btn btn--primary" type="submit" data-i18n="form-submit">Отправить</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+      <aside class="contact__side" data-reveal>
+        <h3 data-i18n="contact-side-title">Мы на связи</h3>
+        <ul class="social">
+          <li><a href="mailto:info.sparta.solutions@gmail.com">info.sparta.solutions@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/sparta.greenhouses/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://t.me/Xurshudyan7" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          <li><a href="https://www.linkedin.com/in/sparta-team-61214a38a?trk=contact-info" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+        <p class="contact__note" data-i18n="contact-side-text">
+          Мы открыты к сотрудничеству.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <img class="footer__mark" src="./assets/sparta-mark.jpg" alt="SPARTA" width="44" height="44">
+  <p><span>SPARTA — </span><span data-i18n="footer-text">Engineering for Smart Agriculture</span></p>
+  <small>© <span id="year">2026</span> <span data-i18n="footer-rights">Команда SPARTA. Все права защищены.</span></small>
+</footer>
+
+<script src="./script.js?v=58"></script>
+<script src="./admin.js?v=58"></script>
+</body>
+</html>

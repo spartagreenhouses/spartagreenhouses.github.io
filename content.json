@@ -1,0 +1,22 @@
+{
+  "texts": {
+    "ru": {
+      "member-1-role": "Соoснователь"
+    },
+    "en": {
+      "member-1-role": "Founder"
+    },
+    "hy": {
+      "member-1-role": "Հիմնադիր"
+    }
+  },
+  "names": {
+    "m4": "Ashot Meloyan"
+  },
+  "photos": {},
+  "styles": {},
+  "extra": [],
+  "removed": [
+    "m6"
+  ]
+}
